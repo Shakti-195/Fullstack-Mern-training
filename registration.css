@@ -1,0 +1,70 @@
+
+body{
+    background-color:lightblue;
+}
+
+fieldset{
+    width: 500px;
+    margin:auto;
+}
+
+fieldset{
+    width: 500px;
+    margin:auto;
+    padding: 20px;
+}
+
+legend{
+    color: brown;
+    font-size:24px;
+    font-weight:bold;
+}
+label{
+    color:black;
+    font-weight: bold;
+}
+
+input{
+    width: 250px;
+    padding: 8px;
+}
+
+textarea{
+    width: 250px;
+    padding: 8px;
+}
+
+button{
+    background-color: yellow;
+    padding: 10px 20px;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: orange;
+}
+input,textarea,button{
+    border: radius 5px;
+}
+
+.firstname{
+    color:red;
+}
+
+.lastname{
+    color:red;
+}
+
+.form-group{
+    width:fit-content;
+    margin-bottom: 15px;
+   
+}
+input{
+    border:2px solid brown;
+}
+
+.gender{
+    
+}

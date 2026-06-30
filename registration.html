@@ -4,52 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration form</title>
+    <link rel="stylesheet" href="registration.css">
 </head>
 <body>
 
+    < class="container">
+    
+
     <fieldset height = "100px">
         <legend><b>BBD University Registration Form</b></legend>
-    <form>
-        <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname" placeholder="ram" required>
+    <>
+        <div class="form-group">
+            <label class="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="ram" required>
+        </div>
 
-        <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" placeholder="siya" required>
+        <div class="form-group">
+            <label class="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="siya" required>
+        </div>
+        
+        <div class:"form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder ="example@gmail.com" required>
+        </div>
+
+        <div class: "form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder ="8423726725" required><br>
+        </div>
+            
+    
+        <div class: "form-group">
+            <label>Gender</label>
+            <label>
+                <input type="radio" name="gender">
+                male
+            </label>
+
+            <label>
+                <input type="radio" name="gender">
+                female
+            </label>
+        </div>
+    
+        <div class: "form-group">
+            <label for="date">DOB:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+    
+        <div class: "form-group">
+            <label for="rollno">RollNo:</label>
+            <input type="number" id="rollno" name="rollno" required>
+        </div>
+    
+        <div class: "form-group">
+            <label for="address">Address:</label>
+            </br>
+            <textarea id="address" name="address"></textarea>
+        </div>
+    
+        <div class: "form-group">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="example123@"required>
+        </div>
     </br>
-    </br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder ="example@gmail.com" required>
-    </br>
-    </br>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder ="8423726725" required>
-    </br>
-    </br>
-        <label for="date">DOB:</label>
-        <input type="date" id="date" name="date" required>
-    </br>
-    </br>
-        <label for="rollno">RollNo:</label>
-        <input type="num" id="num" name="num" required>
-    </br>
-    </br>
-        <label for="address">Address:</label>
-        </br>
-        <textarea id="name" name="address"  rows="4" cols="40"></textarea>
-    </br>
-    </br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="example123@"required>
-    </br>
-    </br>
+    <div class: "form-group">
         <label for="confirm-password">Confirm Password:</label>
         <input type="password" id="confirm-password" name="confirm-password" placeholder="example123@"  required>
-    </br>
-    </br>
+    </div>
         <button type="submit" value="submit">Register</button>
         <button type="reset" value = "reset">Reset</button>
         
     </form>
-    <feildset>
+</fieldset>
+</div>
 </body>
 </html>
