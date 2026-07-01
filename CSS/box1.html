@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+
+    <!-- cascading styles code -->
+    <style>
+    body{
+            
+    margin:0;
+    height:100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgray;
+    flex-direction: column; 
+    }
+    .container{
+        /* display:flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px; */
+        display: grid;
+        grid-template-columns:repeat(3,1fr) ;
+        gap: 20px;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:lightsalmon;
+        background-color: lightseagreen;
+        font-size: 50px;
+        color:darkgreen;
+
+    }
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box box2">Box 1</div>
+        <div class="box box1">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>

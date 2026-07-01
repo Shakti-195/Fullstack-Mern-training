@@ -1,0 +1,130 @@
+body{
+    margin:0;
+    height:100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aquamarine;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 50px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+
+    background-color: steelblue;
+    color: white;
+    border:5px solid #f4c27a;
+    
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    border-radius: 100px;
+    border: 5px solid burlywood;
+    
+    background-size: cover;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box1{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyluzYvhi9CbdRSnNSKl6vnEM1oVekSpWG0YBS7zprjA&s=10);
+}
+.box2{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ7AA98XIPVELPkkGADufL0JNo4NvGloQ6x1d6Yvp4dw&s=10);
+}
+.box3{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6DJ4IIxXH6CFZ2h2VZNL0T4s48fwipgM46PQR6LHMFQ&s=10);
+}
+.box4{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Li3pc17Bq-d2dbMsOWeEOBE1oeHlZxdEhmHIxUKIag&s=10);
+}
+.box5{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVjCKiMNiSyZeHxxdAk2uFK2z7_g4X1K6K0kSlCq0f9w&s=10);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+
+
+
+.card:hover{
+    transform: translateY(-15px);
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.card1{
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card2{
+    background-color: lightseagreen;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card3{
+    background-color: lightsteelblue;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card4{
+    background-color: lightslategray;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card5{
+    background-color: lightpink;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.heading{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Montserrat", sans-serif;
+}
+
+card h3{
+    font-family: "Montserrat", sans-serif;
+}
