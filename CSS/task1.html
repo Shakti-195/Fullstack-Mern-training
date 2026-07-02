@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    
+
+    grid-template-columns:repeat(4,400px);
+    grid-template-columns:repeat(4,400px);;
+    
+    gap: 20px;
+    justify-content: center; 
+}
+.box{
+    
+    width:200px;
+
+    height:200px;
+
+    border-radius:50%;
+
+    border:5px solid wheat;
+
+    background-size:cover;
+
+    background-position:center;
+    transition:.4s;
+    animation: movebox 3s infinite;
+    /* position: relative; */
+}
+/* defining animations */
+@keyframes movebox{
+    from{
+        opacity:0;
+        left:0px;
+    }
+    to{
+        left:80px;
+        opacity:1;
+
+    }
+}
+.card{
+    width: 400px;
+    height: 400px;
+
+    display:grid;
+    grid-template-rows:220px 60px;
+
+    justify-items:center;
+    align-content:center;
+
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    transition:0.4s ease;
+    transition:.4s;
+    position:relative;
+    animation: movebox 3s infinite;
+    cursor:pointer;
+    
+}
+.card1{
+    background:#f47c7c;
+}
+.box1{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZebrgm7vYHEz7LQZVSIwgbr8bc_JzfZ2EiWOmdo9yIw&s=10");
+}
+
+    </style>
+</head>
+<body>
+    <div class="card card1">
+            <div class="box box1"></div>
+            <h3>Image-1</h3>
+        </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+*{
+    margin:25px;
+    padding: 10px;
+    border-radius: 10%;
+    box-sizing:border-box;
+    gap: 20px;
+}
+
+
+body{
+    background:aquamarine;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.heading{
+    text-align:center;
+    margin:40px;
+}
+.container{
+    display: grid;
+    
+
+    grid-template-columns:repeat(4,400px);
+    grid-template-columns:repeat(4,400px);;
+    
+    gap: 20px;
+    justify-content: center;
+    
+
+}
+.card{
+    width: 400px;
+    height: 400px;
+
+    display:grid;
+    grid-template-rows:220px 60px;
+
+    justify-items:center;
+    align-content:center;
+
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    transition:0.4s ease;
+    transition:.4s;
+
+    cursor:pointer;
+    
+}
+
+.card:hover{
+    transform:translateY(-15px);
+    box-shadow:0 25px 45px rgba(0,0,0,.35);
+}
+.box{
+
+    width:200px;
+
+    height:200px;
+
+    border-radius:50%;
+
+    border:5px solid wheat;
+
+    background-size:cover;
+
+    background-position:center;
+    transition:.4s;
+    animation: movebox 3s infinite;
+
+}
+.card:hover .box{
+
+    transform:scale(1.08);
+
+}
+.card1{
+    background:#f47c7c;
+}
+
+.card2{
+    background:#2fb3b3;
+}
+
+.card3{
+    background:#b9c9ec;
+}
+
+.card4{
+    background:#8d99a8;
+}
+
+.card5{
+    background:#f7b2c3;
+}
+
+.card6{
+    background:#fff19d;
+}
+.box1{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZebrgm7vYHEz7LQZVSIwgbr8bc_JzfZ2EiWOmdo9yIw&s=10");
+}
+
+.box2{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQScRhY-74NACwT3wkZKeTNrMFeglEX0uLa7t7qefNtGg&s=10");
+}
+
+.box3{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5d_ceLnsbPkqiUQ1lYaLPZdSYkjPo5rr7GSo1384X4A&s=10");
+}
+
+.box4{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwtqm1FMjTHdtyzi3F6IjHs_KjnId82ashDevk2F4rg&s=10");
+}
+
+.box5{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17h4oxwpjOewkQJhYDm5UyTGcyKWXFwpPPqylzsmknA&s=10");
+}
+
+.box6{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2LVbbNO_VYxtgRCuQkSAWjOEgQzss-fOtONtp_pyr8g&s=10");
+}
+.box7{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSGyhVWIoOgqC-ktZ21mHpiIKFv0Pb_jwXvWi3sZ8lw&s=10");
+}
+.box8{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Ic73kjzbFFZ4E2jpqFfYFREQA9EjIwcA7C7deuh5kQ&s=10");
+}
+
+/* defining animations */
+@keyframes movebox{
+    from{
+        rotate:0deg;
+        opacity:1deg;
+    }
+    to{
+        rotate: 360deg;
+        opacity: 0;
+
+    }
+}
