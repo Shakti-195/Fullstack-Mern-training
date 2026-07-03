@@ -40,6 +40,9 @@ function change(){
     let deleteAttribute = document.getElementById("new").removeAttribute('class');
 
     // creating  a new Element in Dom
+    let newPara = document.createElement("p");
+    newPara.innerText = "BBD University,Lucknow(Uttarpradesh)";// text add
+    document.body.appendChild(newPara); //append in body
     
     
 
