@@ -8,3 +8,5 @@ if (num % 2 === 0){
 }else{
     console.log("odd");
 }
+
+// program 2

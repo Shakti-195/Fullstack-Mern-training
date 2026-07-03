@@ -66,3 +66,5 @@ console.log(add(10,20));
 let a = function(){
 
 }
+// program 2
+
