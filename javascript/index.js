@@ -1,4 +1,4 @@
-function change(){
+// function change(){
     // // let element = document.getElementById("new");
 
     
@@ -46,35 +46,48 @@ function change(){
 
     // creating new element
     
-        let newHeading = document.createElement("h1")//creating new element
-        newHeading.innerText = "welcome to javascript";//text add;
-        document.body.appendChild(newHeading);//append in the body
+        // let newHeading = document.createElement("h1")//creating new element
+        // newHeading.innerText = "welcome to javascript";//text add;
+        // document.body.appendChild(newHeading);//append in the body
 
-        let newImage = document.createElement("img")//creating new element
-        newImage.src= "MY pic.jpg" ;//text add;
-        newImage.width = 300;   // Width in pixels
-        newImage.height = 400;  // Height in pixels
-        document.body.appendChild(newImage);//append in the body
+        // let newImage = document.createElement("img")//creating new element
+        // newImage.src= "MY pic.jpg" ;//text add;
+        // newImage.width = 300;   // Width in pixels
+        // newImage.height = 400;  // Height in pixels
+        // document.body.appendChild(newImage);//append in the body
 
-        let newParagraph = document.createElement("p")//creating new element
-        newParagraph.innerText= "Hello! I am Shakti Singh";//text add;
-        document.body.appendChild(newParagraph);//append in the body
+        // let newParagraph = document.createElement("p")//creating new element
+        // newParagraph.innerText= "Hello! I am Shakti Singh";//text add;
+        // document.body.appendChild(newParagraph);//append in the body
 
-         let newForm = document.createElement("form");
+        //  let newForm = document.createElement("form");
 
-        let input = document.createElement("input");
-        input.type = "text";
-        input.placeholder = "Enter your name";
+        // let input = document.createElement("input");
+        // input.type = "text";
+        // input.placeholder = "Enter your name";
 
-        newForm.appendChild(input);
+        // newForm.appendChild(input);
 
-        document.body.appendChild(newForm);
+        // document.body.appendChild(newForm);
 
-        let removeElement = document.getElementById("new");
-        removeElement.remove();
+        // let removeElement = document.getElementById("new");
+        // removeElement.remove();
+
+        // const btn = document.getElementById("main");
+
+        // btn.addEventListener("click", function(){
+        //     alert("button clicked");
+
+        // });
+        const btn = document.getElementById("main");
+
+        btn.addEventListener("mouseout", function(){
+            alert(" double clicked");
+
+        });
 
         
-        l
+        
 
 
 
@@ -88,5 +101,5 @@ function change(){
     
 
 
-}
+// }
 
