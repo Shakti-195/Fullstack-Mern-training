@@ -79,14 +79,22 @@
         //     alert("button clicked");
 
         // });
-        const btn = document.getElementById("main");
+        // const btn = document.getElementById("main");
 
-        btn.addEventListener("mouseout", function(){
-            alert(" double clicked");
+        // btn.addEventListener("mouseout", function(){
+        //     alert(" double clicked");
 
-        });
+        // });
 
-        
+function add(a,b){
+    console.log(a+b);
+}
+
+add(2,3);
+// arrow function
+let arr = (a,b)=> return(a+b);
+console.log(arr(3,4));
+const sq = (y)>=y*y;
         
 
 
