@@ -65,6 +65,27 @@ Router.get("/:id",async(req,res)=>{
 
 });
 
+Router.put("/:id",async(req,res)=>{
+    try{
+        const student = await Student.findByIdAndUpdate(req.params.id,
+                req.body,
+                {new:true}
+            );
+        
+        res.json(student);
+
+    }catch(error){
+            // error messege
+            res.status(500).json({
+                msg:error.message
+            })
+        
+    }
+
+
+
+});
+
 
 
 
