@@ -1,0 +1,16 @@
+SQL vs Nosql
+
+table    ||  collection
+row      ||  documents
+column   ||  field
+
+
+advantage
+1.flexible schema
+2.scaling (horizontal)
+3.large amount  of data
+4.indexing
+5.cloud feature(Atlas)
+
+db.createCollection( "")-Create new collection
+db.collection_Name.insertOne
