@@ -31,7 +31,7 @@ catch(error){
 // Show all students
 Router.get("/",async(req,res)=>{
     try{
-        const student = await Student.find();
+        const students = await Student.find();
         res.status(201).json(students);
     }catch{
         // error messege
@@ -44,11 +44,26 @@ Router.get("/",async(req,res)=>{
 
 
 });
-// Router.get("/:id",async(req,res)=>{
+Router.get("/:id",async(req,res)=>{
+    try{
+        const student = await Student.findById(req.params.id);
+        if(!student){
+            return res.status(404).json({
+                meg:"Student not found"
+            })
+        }
+        res.json(student);
+    }catch(error){
+            // error messege
+            res.status(500).json({
+                msg:error.message
+            })
+        
+    }
 
 
 
-// });
+});
 
 
 
