@@ -1,44 +1,105 @@
 import axios from "axios";
-import { useState } from "react"
+import { useState } from "react";
 
+function ProductForm() {
 
+    const [product, setProduct] = useState({
+        name: "",
+        price: "",
+        category: "",
+        description: "",
+        image: "",
+        stock: ""
+    });
 
-function ProductForm(){
+    const changeHandler = (e) => {
+        setProduct({
+            ...product,
+            [e.target.name]: e.target.value
+        });
+    };
 
-const [name, setName] = useState("");
-const [price, setPrice] = useState("");
-const [category, setCategory] = useState("");
-const [description, setDescription] = useState("");
-const [image, setImage] = useState("");
-const [stock, setStock] = useState("");
+    const submitHandler = async (e) => {
+        e.preventDefault();
 
-const submitHandler =(e)=>{
-    e.preventDefault();
+        try {
+            const res = await axios.post(
+                "http://localhost:5000/api/products",
+                product
+            );
 
-}
+            console.log(res.data);
+            alert("Product Added Successfully");
 
-const changeHandler =(e)=>{
-    setName(e.target.value)
+            setProduct({
+                name: "",
+                price: "",
+                category: "",
+                description: "",
+                image: "",
+                stock: ""
+            });
 
-}
-
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
     return (
-        <form onSubmit={submitHandler} >
+        <form onSubmit={submitHandler}>
 
-            <input type="text" name="name" value={name} placeholder="Product Name" onChange={changeHandler}/><br/>
-            <input type="number" name="price" value={price} placeholder="Price" onChange={changeHandler} /><br/>
-            <input type="text" name="category" value={category} placeholder="Category" onChange={changeHandler} /><br/>
-            <input type="text" name="description" value={description} placeholder="Description" onChange={changeHandler}/><br/>
-            <input type="text" name="image" value={image} placeholder="Image URL" onChange={changeHandler} /><br/>
-            <input type="number" name="stock" value={stock} placeholder="Stock" onChange={changeHandler}/><br/>
+            <input
+                type="text"
+                name="name"
+                value={product.name}
+                placeholder="Product Name"
+                onChange={changeHandler}
+            /><br />
 
-            <button>Add</button>
-        
+            <input
+                type="number"
+                name="price"
+                value={product.price}
+                placeholder="Price"
+                onChange={changeHandler}
+            /><br />
+
+            <input
+                type="text"
+                name="category"
+                value={product.category}
+                placeholder="Category"
+                onChange={changeHandler}
+            /><br />
+
+            <input
+                type="text"
+                name="description"
+                value={product.description}
+                placeholder="Description"
+                onChange={changeHandler}
+            /><br />
+
+            <input
+                type="text"
+                name="image"
+                value={product.image}
+                placeholder="Image URL"
+                onChange={changeHandler}
+            /><br />
+
+            <input
+                type="number"
+                name="stock"
+                value={product.stock}
+                placeholder="Stock"
+                onChange={changeHandler}
+            /><br />
+
+            <button type="submit">Add Product</button>
+
         </form>
-    )
-
-
+    );
 }
 
 export default ProductForm;
